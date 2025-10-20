@@ -1,0 +1,9 @@
+# Ignore the virtual environment folder and joblib files outside of models/
+venv/
+__pycache__/
+*.pyc
+# Ignore large files that shouldn't be tracked
+data/public_sms.csv
+spam.csv
+# Ignore the actual model pipeline, as the model/ directory will be tracked
+models/pipeline.joblib

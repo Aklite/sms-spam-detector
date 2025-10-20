@@ -1,0 +1,26 @@
+label,text,clean_text,msg_len,num_exclaim,has_url,upper_ratio
+ham,Hey how are you doing?,hey how are you doing?,22,0,0,0.045454545454545456
+ham,I will call you later okay?,i will call you later okay?,27,0,0,0.037037037037037035
+ham,Are you coming to class tomorrow?,are you coming to class tomorrow?,33,0,0,0.030303030303030304
+ham,Let’s go for lunch today.,let s go for lunch today.,25,0,0,0.04
+ham,I reached home safely.,i reached home safely.,22,0,0,0.045454545454545456
+ham,Good morning have a nice day.,good morning have a nice day.,29,0,0,0.034482758620689655
+ham,Where are you right now?,where are you right now?,24,0,0,0.041666666666666664
+ham,See you soon buddy.,see you soon buddy.,19,0,0,0.05263157894736842
+ham,I am studying for exam.,i am studying for exam.,23,0,0,0.043478260869565216
+ham,Can you send me the notes please?,can you send me the notes please?,33,0,0,0.030303030303030304
+spam,Congratulations! You won a free gift voucher. Click http://bit.ly/prize,congratulations! you won a free gift voucher. click URL,71,1,1,0.04225352112676056
+spam,You have won $1000 cash! Claim now.,you have won NUM cash! claim now.,35,1,0,0.05714285714285714
+spam,Free entry in 2 a weekly competition to win prizes!,free entry in NUM a weekly competition to win prizes!,51,1,0,0.0196078431372549
+spam,URGENT! Call this number now to claim your reward.,urgent! call this number now to claim your reward.,50,1,0,0.14
+spam,Get cheap loans instantly apply online.,get cheap loans instantly apply online.,39,0,0,0.02564102564102564
+spam,You have been selected for a lucky draw. Visit www.offer.com,you have been selected for a lucky draw. visit URL,60,0,1,0.03333333333333333
+spam,Win cash prizes every day. Hurry!,win cash prizes every day. hurry!,33,1,0,0.06060606060606061
+spam,Free ringtone! Text WIN to 8008.,free ringtone! text win to NUM .,32,1,0,0.15625
+spam,Get free recharge worth Rs.100 click here.,get free recharge worth rs. NUM click here.,42,0,0,0.047619047619047616
+spam,You are chosen for free coupons click http://spamlink.com,you are chosen for free coupons click URL,57,0,1,0.017543859649122806
+spam,You have won 5 lakh rupees! Call now to claim.,you have won NUM lakh rupees! call now to claim.,46,1,0,0.043478260869565216
+spam,Congratulations! You will receive 2 lakhs cashback offer soon.,congratulations! you will receive NUM lakhs cashback offer soon.,62,1,0,0.03225806451612903
+spam,Win a bonus of Rs.5000 on recharge.,win a bonus of rs. NUM on recharge.,35,0,0,0.05714285714285714
+spam,You are selected for a lucky draw worth 1 lakh rupees.,you are selected for a lucky draw worth NUM lakh rupees.,54,0,0,0.018518518518518517
+spam,Claim your reward of 50 lakhs now!,claim your reward of NUM lakhs now!,34,1,0,0.029411764705882353
