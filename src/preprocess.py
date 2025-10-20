@@ -3,16 +3,19 @@ import re
 import pandas as pd
 import os
 
-# --- Cleaning Function ---
-abbr = {' u ':' you ', ' ur ':' your ', ' r ':' are ', ' pls ':' please ', ' msg ':' message '}
+# --- Cleaning Function (CRITICAL FIX: Added 'msg.' to dictionary) ---
+abbr = {' u ':' you ', ' ur ':' your ', ' r ':' are ', ' pls ':' please ', ' msg ':' message ', 'msg.': ' message. '}
 
 def clean_text(s):
     s = str(s)
     s = s.lower()
     s = re.sub(r'http\S+|www\.\S+', ' URL ', s)
     s = re.sub(r'\d+', ' NUM ', s)
+    
+    # Replace abbreviations
     for k,v in abbr.items():
         s = s.replace(k, v)
+        
     s = re.sub(r'[^a-zA-Z0-9\s!?.]', ' ', s)
     s = re.sub(r'\s+', ' ', s).strip()
     return s
@@ -28,6 +31,6 @@ try:
     df.to_csv(PROCESSED_PATH, index=False)
     print("✅ Preprocessing done. Saved to data/processed_sms.csv")
 except FileNotFoundError:
-    print(f"🛑 CRITICAL ERROR: Raw data file not found at {RAW_PATH}. Ensure raw_sms.csv exists.")
+    print(f"🛑 CRITICAL ERROR: Raw data file not found at {RAW_PATH}.")
 except Exception as e:
     print(f"🛑 CRITICAL ERROR: Preprocessing failed due to: {e}")

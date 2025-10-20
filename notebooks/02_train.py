@@ -36,8 +36,8 @@ X_train, X_test, y_train, y_test = train_test_split(
 # --- 2. Build the Preprocessing Transformer (Merges two paths) ---
 preprocessor = ColumnTransformer(
     transformers=[
-        # CRITICAL FIX: max_df=0.8 ignores words common in > 80% of documents (Ham messages)
-        ('text_pipe', TfidfVectorizer(ngram_range=(1,2), min_df=2, max_df=0.8), TEXT_FEATURE),
+        # CRITICAL FIX: max_df=0.7 aggressively filters highly common Ham words 
+        ('text_pipe', TfidfVectorizer(ngram_range=(1,2), min_df=2, max_df=0.7), TEXT_FEATURE),
         # Path 2: Scale the numeric/handcrafted features
         ('num_pipe', StandardScaler(), NUMERIC_FEATURES)
     ],
