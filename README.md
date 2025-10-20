@@ -10,10 +10,10 @@ The application successfully runs in a containerized cloud environment, bypassin
 Component,Tools Used
 
 Language,Python 
-Machine Learning,,"scikit-learn (Logistic Regression, ColumnTransformer) "
-Feature Extraction,,"TfidfVectorizer, Handcrafted Features "
-Web / UI,,Streamlit (for the easy web demo) 
-Model Persistence,,joblib 
+Machine Learning,  ,"scikit-learn (Logistic Regression, ColumnTransformer) "
+Feature Extraction,,  "TfidfVectorizer, Handcrafted Features "
+Web / UI,  ,Streamlit (for the easy web demo) 
+Model Persistence,  ,joblib 
 
 
 
